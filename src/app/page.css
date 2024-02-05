@@ -1,0 +1,83 @@
+/* Add reset styles if needed (consider using a CSS reset framework like Normalize.css or Tailwind CSS) */
+@font-face {
+    font-family: 'ProjectFont'; /* Give the font a name you'll use later */
+    src: url("./Courgette-Regular.ttf"); /* Path to the .ttf file */
+    font-weight: normal; /* Specify weight if needed */
+    font-style: normal; /* Specify style if needed */
+  }
+
+body {
+     /* Choose your preferred font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  * {
+    font-family:'ProjectFont';
+    box-sizing: border-box; /* Ensure consistent sizing with padding and border */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #dedeea; /* Set your preferred link color */
+  }
+  
+  a:hover {
+    color: #333; /* Adjust hover color */
+  }
+ 
+  
+  .nav{
+
+  }
+
+  .welcome{
+
+  }
+
+  .navigations{
+    
+  }
+
+
+
+
+
+  button {
+    background-color: #28292a; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 10px 20px; /* Adjust padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  button:hover {
+    background-color: #16181a; /* Adjust hover background color */
+  }
+  
+  .arrow { /* Assuming these classes apply to the arrow buttons */
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 50%; /* Make circular */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  .arrow.left {
+    /* Style for left arrow button */
+    background-image: url("./iconmonstr-arrow-25.svg");
+    transform: scaleX(-1);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+  }
+  
+  .arrow.right {
+    /* Style for right arrow button */
+    background-image: url("./iconmonstr-arrow-25.svg"); 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+  }
+  
+  /* Add more styles as needed for other elements in your page */
+  

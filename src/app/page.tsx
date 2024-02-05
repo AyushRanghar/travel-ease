@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./globals.css"
+import "./page.css";
 
 export default function Home() {
   return <div>
@@ -10,7 +10,7 @@ export default function Home() {
 
 function NavBar() {
   return (
-    <div>
+    <div className="nav">
       <a href="">LOGO</a>
       <nav>
         <ul>
@@ -29,12 +29,12 @@ function NavBar() {
 function Page() {
   return (
     <>
-      <div>
+      <div className="welcome">
         <h2>Welcome to</h2>
         <h1>Travel Ease</h1>
         <button>Enter</button>
       </div>
-      <div>
+      <div className="navigations">
         <button className="arrow left"></button>
         <button className="arrow right"></button>
       </div>
