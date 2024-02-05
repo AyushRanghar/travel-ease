@@ -10,16 +10,19 @@ body {
      /* Choose your preferred font family */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    height: 100vh;
+    width: 100vw;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
   }
   
   * {
     font-family:'ProjectFont';
-    box-sizing: border-box; /* Ensure consistent sizing with padding and border */
+
   }
   
   a {
-    text-decoration: none; /* Remove underline from links */
-    color: #dedeea; /* Set your preferred link color */
+    text-decoration: none; /* Remove underline from links */  
   }
   
   a:hover {
@@ -28,14 +31,54 @@ body {
  
   
   .nav{
+    height: 5%;
+    padding: 2em;
+    background-color: #0e0d0d64;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    text-shadow: 1px 1px 2px black; 
+  }
+  .nav ul{
+    display: flex;
+    gap: 2em;
+    
+  }
 
+  .bg{
+    background-image: url("./vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg");
+    filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    z-index: -999;
+    
   }
 
   .welcome{
+    font-size: large;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+    height: 40vh;
+    text-shadow: 1px 1px 2px black; 
+  }
 
+  .welcome h2{
+    font-size: 30px;
+  }
+  .welcome h1{
+    font-size:60px;
   }
 
   .navigations{
+    display: flex;
+    justify-content: space-between;
     
   }
 
@@ -44,8 +87,8 @@ body {
 
 
   button {
-    background-color: #28292a; /* Set button background color */
-    color: white; /* Set button text color */
+    background-color: #28292a7b; /* Set button background color */
+    
     padding: 10px 20px; /* Adjust padding */
     border: none; /* Remove default border */
     border-radius: 5px; /* Add rounded corners */
@@ -59,7 +102,7 @@ body {
   .arrow { /* Assuming these classes apply to the arrow buttons */
     width: 50px; /* Adjust width */
     height: 50px; /* Adjust height */
-    border: 1px solid #ccc; /* Add border */
+    border: 1px solid #cccccc00; /* Add border */
     border-radius: 50%; /* Make circular */
     cursor: pointer; /* Indicate clickable element */
   }

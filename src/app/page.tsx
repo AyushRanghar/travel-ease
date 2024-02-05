@@ -3,6 +3,7 @@ import "./page.css";
 
 export default function Home() {
   return <div>
+    <div className="bg"></div>
     <NavBar/>
     <Page/>
   </div>
@@ -11,7 +12,7 @@ export default function Home() {
 function NavBar() {
   return (
     <div className="nav">
-      <a href="">LOGO</a>
+      <a href="">LOGO</a> {/** url routing to home page */}
       <nav>
         <ul>
           <li>Home</li>
@@ -29,10 +30,11 @@ function NavBar() {
 function Page() {
   return (
     <>
+    
       <div className="welcome">
         <h2>Welcome to</h2>
         <h1>Travel Ease</h1>
-        <button>Enter</button>
+        <button>Explore</button> {/**button to enter the main website  */}
       </div>
       <div className="navigations">
         <button className="arrow left"></button>
