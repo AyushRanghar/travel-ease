@@ -21,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1>Travel Ease</h1>  
-        <Navbar/>
+        <h1 className="font-extrabold text-center text-9xl text-yellow-500 p-10 bg-blue-600">
+          ✈️Travel Ease🌴
+        </h1>
+        <Navbar />
         {children}
       </body>
     </html>
