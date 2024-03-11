@@ -4,7 +4,7 @@ import "./global.css";
 
 //components
 import Navbar from "./components/Navbar";
-
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1 className="font-extrabold text-center text-4xl text-yellow-500 p-10 bg-blue-600">
-          ✈️Travel Ease🌴
-        </h1>
+        <Link href={"/"}>
+          <h1
+            className={`${inter.className} antialiased font-extrabold text-center text-xl text-black p-2 bg-white`}
+          >
+            ✈️Travel Ease🌴
+          </h1>
+        </Link>
         <Navbar />
         {children}
       </body>

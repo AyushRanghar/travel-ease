@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "city": "Paris",
+      "country": "France"
+    },
+    {
+      "city": "London",
+      "country": "England"
+    },
+    {
+      "city": "Rome",
+      "country": "Italy"
+    },
+    {
+      "city": "New York City",
+      "state": "New York",
+      "country": "USA"
+    },
+    {
+      "city": "Los Angeles",
+      "state": "California",
+      "country": "USA"
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    {
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    {
+      "city": "Dubai",
+      "country": "United Arab Emirates"
+    },
+    {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    {
+      "city": "Istanbul",
+      "country": "Turkey"
+    }
+  ]
+}
