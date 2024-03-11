@@ -1,0 +1,36 @@
+<!-- How to make particular set of code not load ( reason: waiting for data ) while whole page loads and that set of code does not render till it fetches all the data it requires? -->
+<Suspense
+  fallback=any component name here which u want to show while waiting for data
+  >Here we write all the code which is waiting for the data to arrive so that related code here can work
+</Suspense>
+
+<!-- How to get ending address or text from url ? -->
+
+Dynamic segment where we use "params" property in the function's parameter where params is the any data in url after like in this url localhost:4000/Login/123 so "123" is the data of param in this.
+This rule applies to only those components whose folder is named under square brackets such as [components] this as the name of folder.
+
+<!-- This is how we send data to a json file.
+            OR
+How to store data in databas / fake api ? -->
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading (true);
+
+    const ticket = {
+        title, body, priority, user_email: 'mario@netninja.dev'
+    }
+
+    const res = await fetch('http://localhost:4000/tickets', { 
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(ticket)
+    })
+
+    if (res.status === 201) {
+        router.refresh(); // this is used to refresh the page that is going to be loaded and refetch the data that may have changed.
+        
+        router.push('/tickets') // this redirect the user to any url or route which u wish the user to see after this submit. Which in this case is tickets page.
+    }
+    }
+
